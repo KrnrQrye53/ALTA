@@ -12,12 +12,12 @@ export type ChapterMeta = {
 };
 
 export const CHAPTERS: ChapterMeta[] = [
-  { id: "1", name: "テスト分析プロセス" },
-  { id: "2", name: "テストマネジメントにおけるテストアナリストの責務" },
+  { id: "1", name: "テストプロセスにおけるテストアナリストのタスク" },
+  { id: "2", name: "リスクベースドテストにおけるテストアナリストのタスク" },
   { id: "3", name: "テスト技法" },
   { id: "4", name: "ソフトウェア品質特性のテスト" },
   { id: "5", name: "レビュー" },
-  { id: "6", name: "テストツールと自動化" },
+  { id: "6", name: "テストツールおよび自動化" },
 ];
 
 export const ALL_QUESTIONS: Question[] = [

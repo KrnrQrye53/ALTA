@@ -92,12 +92,12 @@ export function renderHistory(root: HTMLElement): void {
 }
 
 function countWrongsByChapter(records: { wrongIds: string[] }[]): Record<string, number> {
+  const idToChapter = new Map(ALL_QUESTIONS.map((q) => [q.id, q.chapter]));
   const out: Record<string, number> = {};
   for (const r of records) {
     for (const id of r.wrongIds) {
-      const m = /^ch(\d+)-/.exec(id);
-      if (!m) continue;
-      const ch = m[1];
+      const ch = idToChapter.get(id);
+      if (!ch) continue;
       out[ch] = (out[ch] ?? 0) + 1;
     }
   }
