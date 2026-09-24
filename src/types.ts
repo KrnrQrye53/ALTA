@@ -9,6 +9,7 @@ export type Question = {
   choices: string[];
   correctAnswers: number[];
   explanation: string;
+  source?: "ai";
 };
 
 export type QuizMode = "exam" | "practice" | "review";

@@ -285,6 +285,10 @@ a {
   background: var(--warn);
   color: #1f2328;
 }
+.qmeta-chip.ai {
+  background: transparent;
+  border: 1px solid var(--text-muted);
+}
 .qbody {
   font-size: 1.1rem;
   line-height: 1.7;
