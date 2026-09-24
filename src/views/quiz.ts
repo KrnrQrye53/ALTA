@@ -147,6 +147,7 @@ function renderQuestion(state: QuizState): string {
       <span class="qmeta-chip">第${q.chapter}章 ${escapeHtml(q.chapterName)}</span>
       ${q.kLevel ? `<span class="qmeta-chip kl">${q.kLevel}</span>` : ""}
       ${isMulti ? `<span class="qmeta-chip warn">複数選択</span>` : ""}
+      ${q.source === "ai" ? `<span class="qmeta-chip ai">AI作成</span>` : ""}
     </div>
   `;
 
